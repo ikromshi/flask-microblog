@@ -1,0 +1,31 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #faebd7;
+  font-size: 3rem;
+}
+
+.quote-block {
+  height: 100vh;
+  display: flex;
+  margin-left: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .block {
+  background-color: #333;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.inner-block {
+  background-color: #faebd7;
+} */
