@@ -4,6 +4,10 @@ from random import randint
 
 @app.route("/")
 def index():
+  return "Hello"
+
+@app.route("/quotes")
+def renderQuotes():
   quotes = {
     1: {
       "quote": "Be yourself; everyone else is already taken.", 
