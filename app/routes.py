@@ -1,8 +1,8 @@
+from flask_login import login_user, current_user, logout_user
 from flask import render_template, flash, redirect, url_for
-from app import app
-from flask_login import login_user, current_user
 from app.forms import CreateAccountForm, LoginForm
 from app.models import User
+from app import app
 
 
 @app.route('/')
@@ -45,3 +45,9 @@ def signup():
             form.username.data))
         return redirect(url_for('index'))
     return render_template("new_account.html", title="Sign Up", form=form)
+
+
+@app.route("/logout")
+def logout():
+    logout_user()
+    return redirect(url_for("index"))
